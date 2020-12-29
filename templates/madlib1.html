@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+
+
+{% block head %}
+
+<title>Project: Blog</title>
+
+{% endblock %}
+
+
+    
+        {% block body %}
+        
+        <h1>My first mad lib</h1>
+
+       <form action="/" method="POST">
+        <input type="text" name="firstword" placeholder="noun">
+        <button type="submit" name="submit">Submit</button>
+       </form>
+{% endblock %}
