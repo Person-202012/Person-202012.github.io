@@ -1,32 +1,110 @@
-{% extends 'base.html' %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="google-site-verification" content="fMvkrRxf3lZYvUpvbTyINiL2AJUwbODUbX2mTWFRIMk" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+        <title>My first Mad  Lib!</title>
+    </head>
+    <body>
+            <style>
+                    form {
+    width:300px;
+}
+   
+input {
+    width:100%;
+}
+   
+textarea {
+   resize: vertical;
+    max-height: 100px;
+}
+
+/*
+input, textarea{
+    outline: none;
+    border: 1px solid #ddd;
+}
+
+input:focus, textarea:focus{
+    box-shadow: 0 0 4px rgba(0, 110, 255,0.5);
+    border: 1px solid rgb(0, 110, 255);
+}
+
+*/
+
+::placeholder {
+    color: rgb(100, 85, 85);
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: rgb(102, 89, 89);
+    opacity: 1;
+}
+
+::-ms-input-placeholder {
+    color: rgb(102, 89, 89);
+    opacity: 1;
+}
 
 
 
-{% block head %}
-
-<title>Project: Blog</title>
-
-{% endblock %}
-
+body{
+     font-family:cursive;
+}   
 
     
-        {% block body %}
+    
+h1{
+    color:blue;
+    font-weight:bold;
+}
+    
+h2{
+    font-family: Helvetica;
+    font-size: 30px;
+    font-style: italic;
+}
         
+        
+h6{
+     text-align:right;
+}
+
+            </style>
+
         <h1>My first mad lib</h1>
 
-       <form action="/" method="POST">
-        <input type="text" name="firstword" placeholder="noun">
-        <input type="text" name="secondword" placeholder="person in the room">
-        <input type="text" name="thirdword" placeholder="adjective">
-        <input type="text" name="fourthword" placeholder="adjective">
-        <input type="text" name="fifthword" placeholder="noun">
-        <input type="text" name="sixthword" placeholder="body part">
-        <input type="text" name="seventhword" placeholder="adjective">
-        <input type="text" name="eighthword" placeholder="noun">
-        <input type="text" name="ninthword" placeholder="noun that you could possibly use to refer to a male person">
-        <input type="text" name="tenthword" placeholder="noun that you could possibly use to refer to a female person">
-        <input type="text" name="eleventhword" placeholder="verb">
-        <input type="text" name="twelvethword" placeholder="noun">
-        <button type="submit" name="submit">Submit</button>
-       </form>
-{% endblock %}
+        <form action="/" method="POST">
+                <input type="text" name="firstword" placeholder="noun">
+                <br>
+                <input type="text" name="secondword" placeholder="person in the room">
+                <br>
+                <input type="text" name="thirdword" placeholder="adjective">
+                <br>
+                <input type="text" name="fourthword" placeholder="adjective">
+                <br>
+                <input type="text" name="fifthword" placeholder="noun">
+                <br>
+                <input type="text" name="sixthword" placeholder="body part">
+                <br>
+                <input type="text" name="seventhword" placeholder="adjective">
+                <br>
+                <input type="text" name="eighthword" placeholder="noun">
+                <br>
+                <input type="text" name="ninthword" placeholder="noun that you could possibly use to refer to a male person">
+                <br>
+                <input type="text" name="tenthword" placeholder="noun that you could possibly use to refer to a female person">
+                <br>
+                <input type="text" name="eleventhword" placeholder="verb">
+                <br>
+                <input type="text" name="twelvethword" placeholder="noun">
+                <br>
+                <button type="submit" name="submit">Submit</button>
+        </form>
+        
+    </body>
+</html>
