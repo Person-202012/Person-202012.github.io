@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="google-site-verification" content="fMvkrRxf3lZYvUpvbTyINiL2AJUwbODUbX2mTWFRIMk" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+    <body>
+    <style>
+        form {
+    width:300px;
+}
+   
+input {
+    width:100%;
+}
+   
+textarea {
+   resize: vertical;
+    max-height: 100px;
+}
+
+/*
+input, textarea{
+    outline: none;
+    border: 1px solid #ddd;
+}
+
+input:focus, textarea:focus{
+    box-shadow: 0 0 4px rgba(0, 110, 255,0.5);
+    border: 1px solid rgb(0, 110, 255);
+}
+
+*/
+
+::placeholder {
+    color: rgb(100, 85, 85);
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: rgb(102, 89, 89);
+    opacity: 1;
+}
+
+::-ms-input-placeholder {
+    color: rgb(102, 89, 89);
+    opacity: 1;
+}
+
+
+
+body{
+     font-family:cursive;
+}   
+
+    
+    
+h1{
+    color:blue;
+    font-weight:bold;
+}
+    
+h2{
+    font-family: Helvetica;
+    font-size: 30px;
+    font-style: italic;
+}
+        
+        
+h6{
+     text-align:right;
+}
+
+    </style>
+
+
+    <form action="">
+        Value 1: <input type="text" id='value1'>
+        Value 2: <input type="text" id='value2'>
+        Operator:
+        <select id='operator'>
+            <option value="add">Add</option>
+            <option value="min">Minus</option>
+            <option value="div">Divide</option>
+            <option value="mul">Multipliy</option>
+        </select>
+        <button type='button' onclick="calc()">Calculate</button>
+    </form>
+
+    <div id='result'></div>
+
+    </body>
+    <script src='calculator.js'></script>
+</html>
