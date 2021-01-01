@@ -4,12 +4,11 @@
         <meta charset="utf-8">
         <meta name="google-site-verification" content="fMvkrRxf3lZYvUpvbTyINiL2AJUwbODUbX2mTWFRIMk" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
         <title>My first Mad  Lib!</title>
     </head>
     <body>
             <style>
-                    form {
+form {
     width:300px;
 }
    
@@ -79,33 +78,35 @@ h6{
         <h1>My first mad lib</h1>
 
         <form action="/" method="POST">
-                <input type="text" name="firstword" placeholder="noun">
+                <input type="text" id="firstword" placeholder="noun">
                 <br>
-                <input type="text" name="secondword" placeholder="person in the room">
+                <input type="text" id="secondword" placeholder="person in the room">
                 <br>
-                <input type="text" name="thirdword" placeholder="adjective">
+                <input type="text" id="thirdword" placeholder="adjective">
                 <br>
-                <input type="text" name="fourthword" placeholder="adjective">
+                <input type="text" id="fourthword" placeholder="adjective">
                 <br>
-                <input type="text" name="fifthword" placeholder="noun">
+                <input type="text" id="fifthword" placeholder="noun">
                 <br>
-                <input type="text" name="sixthword" placeholder="body part">
+                <input type="text" id="sixthword" placeholder="body part">
                 <br>
-                <input type="text" name="seventhword" placeholder="adjective">
+                <input type="text" id="seventhword" placeholder="adjective">
                 <br>
-                <input type="text" name="eighthword" placeholder="noun">
+                <input type="text" id="eighthword" placeholder="noun">
                 <br>
-                <input type="text" name="ninthword" placeholder="noun that you could possibly use to refer to a male person">
+                <input type="text" id="ninthword" placeholder="noun that you could possibly use to refer to a male person">
                 <br>
-                <input type="text" name="tenthword" placeholder="noun that you could possibly use to refer to a female person">
+                <input type="text" id="tenthword" placeholder="noun that you could possibly use to refer to a female person">
                 <br>
-                <input type="text" name="eleventhword" placeholder="verb">
+                <input type="text" id="eleventhword" placeholder="verb">
                 <br>
-                <input type="text" name="twelvethword" placeholder="noun">
+                <input type="text" id="twelvethword" placeholder="noun">
                 <br>
-                <button type="submit" name="submit">Submit</button>
+                <button type='button' onclick="madLib1()">enter</button>
         </form>
         
 
+            <div id='result'></div>
     </body>
+    <script src='madlib1.js'></script>
 </html>
