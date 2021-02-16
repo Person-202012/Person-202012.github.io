@@ -46,12 +46,14 @@ input:focus, textarea:focus{
 body{
      font-family:cursive;
      font-size: 20px;
-     margin-left: 25px;
+
 }   
 
     
     
 h1{
+
+    text-align: center;
     color:blue;
     font-weight:bold;
 }
