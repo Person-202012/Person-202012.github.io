@@ -27,6 +27,46 @@ font-family: arial;
 font-size: 18px;
 color: #fff;
 padding-bottom: 4px;
+text-align: center;
+}
+
+.copyright {
+position: relative;
+padding-top: 200px;
+padding-bottom: 10px;
+left: 0;
+bottom: 0;
+width: 100%;
+color: white;
+text-align: center;
+font-family: arial;
+}
+
+.how-to {
+background-color: #1b1b1b;
+height: 100px;
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+align-items: center;
+justify-content: center;
+}
+
+.how-to p {
+font-family: arial;
+font-size: 18px;
+color: #fff;
+padding-bottom: 4px;
+text-align: center;
+margin-top: 5px;
+margin-left: 400px;
+margin-right: 400px;
+}
+
+.how-to h2 {
+font-family: 'Acme', sans-serif;
+font-size: 30px;
+color: #f8b700;
 }
 
 .header h2 {
