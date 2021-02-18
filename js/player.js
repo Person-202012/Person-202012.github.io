@@ -35,7 +35,7 @@ let PlayerMoves = {
         currentEnemyStamina = enemy.stamina;
         currentPlayerStamina = player.stamina;
 
-        if (getPlayerSpeed > getEnemySpeed) {
+        if (getPlayerSpeed >= getEnemySpeed) {
             this.PlayerAttacksFirst();
         }else {
             this.EnemyAttacksFirst();
