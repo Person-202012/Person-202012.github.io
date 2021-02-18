@@ -43,6 +43,27 @@ let PlayerMoves = {
         
     },
 
+
+
+    //make the player imidietly win :P
+    MakePlayerWinImmediately: function() {
+        //change your enemy's health for after you attacked them
+        let setEnemyHealth = 0;
+        let getEnemyHealth = document.querySelector('.health-enemy');
+        getEnemyHealth.innerHTML = '<p class="health-enemy">Health: ' + setEnemyHealth + '</p>';
+        console.log('enemy remaning health ' + setEnemyHealth);
+        currentEnemyHealth = setEnemyHealth;
+
+       
+        //display "you won" message
+            alert('You won!!! You also cheated!! Congrats! Reload to play again!');
+        
+    },
+
+
+
+
+
     PlayerAttacksFirst: function() {
         //player attack
         let calcDamageAfterHacks;
