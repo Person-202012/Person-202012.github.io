@@ -6,16 +6,16 @@ let GameManager = {
     resetPlayer: function(classType) {
         switch (classType) {
             case 'Dean':
-                player = new Player(classType, 200, 150, 500, 50, 350, 500, 25);
+                player = new Player(classType, 250, 150, 350, 50, 350, 500, 25);
                 break;
             case 'Adri':
-                player = new Player(classType, 150, 100, 150, 100, 250, 200, 500);
+                player = new Player(classType, 200, 100, 150, 500, 250, 200, 500);
                 break;
             case 'Dude':
-                player = new Player(classType, 300, 500, 0, 0, 50, 250, 0);
+                player = new Player(classType, 325, 500, 0, 0, 50, 250, 0);
                 break;
             case 'Neil':
-                player = new Player(classType, 200, 150, 400, 300, 300, 400, 100);
+                player = new Player(classType, 300, 150, 300, 300, 300, 400, 100);
                 break;
             default:
                 console.log('error, you made this error message, you probably changed a name or something');
@@ -36,9 +36,10 @@ let GameManager = {
         let getHeader = document.querySelector(".header");
         let getActions = document.querySelector(".actions");
         let getEnemy = document.querySelector(".enemy");
+        let getHowTo = document.querySelector('.how-to');
 
-        let enemy00 = new Enemy('Ben', 150, 100, 0, 200, 100, 199, 0);
-        let enemy01 = new Enemy('Devil', 200, 200, 100, 200, 200, 199, 300);
+        let enemy00 = new Enemy('Ben', 150, 100, 25, 175, 100, 175, 0);
+        let enemy01 = new Enemy('Devil', 200, 200, 100, 200, 200, 200, 300);
         let enemy02 = new Enemy('Pumpkin', 225, 100, 0, 0, 150, 50, 100);
         let enemy03 = new Enemy('Wizy', 150, 100, 10, 400, 400, 400, 500);
 
@@ -61,6 +62,7 @@ let GameManager = {
         getHeader.innerHTML = '<p>Task: Choose your move!</p>';
         getActions.innerHTML = '<a href="#" class="btn-prefight" onclick="PlayerMoves.calcFirstAttack()">Attack!</a>';
         getEnemy.innerHTML = '<img src="Video-Game-elements/Enemies/' + enemy.enemyType + '.jpg" alt="' + enemy.enemyType + '" class="img-avatar"><div><h3>' + enemy.enemyType + '</h3><p class="health-enemy">Health: ' + enemy.health + '</p><p>Strength: ' + enemy.strength + '</p><p>Hacks: ' + enemy.hacks + '</p><p>Agility: ' + enemy.agility + '</p><p class="stamina-enemy">Stamina: ' + enemy.stamina + '</p><p>Speed: ' + enemy.speed + '</p><p>Cuteness: ' + enemy.cuteness + '</p></div>';
+        getHowTo.innerHTML = '<div></div>';
         
     }
 }
