@@ -96,6 +96,7 @@ let PlayerMoves = {
         if (calcAgilityRandomNumber <= getEnemyAgility) {
             //they dodged it
         console.log("Your enemy's lucky as hell");
+        alert('Your enemy dodged your attack!! :( Now it\'s their turn');
 
 
 
@@ -131,6 +132,7 @@ let PlayerMoves = {
          if (calcPlayerAgilityRandomNumber <= getPlayerAgility) {
              //you doged it!
              console.log("You're lucky as hell!!");
+             alert('You doged your enemy\'s attack! Now it\'s your turn!')
              return
          } else {
              //you don't doge it:(
@@ -152,7 +154,8 @@ let PlayerMoves = {
                      //if so, say that you lost
                      alert('You lost :( Reload to play again. Next time, chosse a better chatracter');
                  } else {
-                     return
+                     alert('You did not dige your enemy\'s attack! You have been damaged! Now it\'s your turn!');
+                     return;
                  }
              } else {
                  console.log('final enemy atk dmg ' + finalEnemyAttackDamage);
@@ -167,6 +170,7 @@ let PlayerMoves = {
                      //if so, say that you lost
                      alert('You lost :( Reload to play again. Next time, chosse a better chatracter');
                 } else {
+                    alert('You did not dodge your enemy\'s attack! You have been damaged! Now it\'s your turn!');
                      return
                     }
                 }   
@@ -202,9 +206,9 @@ let PlayerMoves = {
                 //see if the enemy is still alive
                 if (setEnemyHealth <= 0) {
                     //if so, display "you won" message
-                    alert('You won!!! Congrats! Reload to play again!');
+                    alert('You won!!! You did not cheat! Congrats! Reload to play again!');
                 } else {
-
+                    alert("You damaged your enemy! Good Job! Now it is their turn to attack YOU!!");
 
 
                     //enemy attacks
@@ -237,6 +241,7 @@ let PlayerMoves = {
                     //calc probability of doging
                     if (calcPlayerAgilityRandomNumber <= getPlayerAgility) {
                         //you doged it!
+                        alert("You have dodged your enemy! Now it's your turn to attack!!")
                         console.log("You're lucky as hell!!");
                         let getActions = document.querySelector(".actions");
                         getActions.innerHTML = '<a href="#" class="btn-prefight" onclick="PlayerMoves.PlayerAttacksFirst()">Attack again!!</a>';
@@ -263,6 +268,8 @@ let PlayerMoves = {
                             } else {
                                 let getActions = document.querySelector(".actions");
                                 getActions.innerHTML = '<a href="#" class="btn-prefight" onclick="PlayerMoves.PlayerAttacksFirst()">Attack again!!</a>';
+                                alert('You did not dodge your enemy\'s attack! You have been damaged! Now it\'s your turn!');
+                                
                                 return;
                             }
                         } else {
@@ -278,6 +285,7 @@ let PlayerMoves = {
                                 //if so, say that you lost
                                 alert('You lost :( Reload to play again. Next time, chosse a better chatracter');
                             } else {
+                                alert('You did not dodge your enemy\'s attack! You have been damaged! Now it\'s your turn!');
                                 let getActions = document.querySelector(".actions");
                                 getActions.innerHTML = '<a href="#" class="btn-prefight" onclick="PlayerMoves.PlayerAttacksFirst()">Attack again!!</a>';
                                 return;
@@ -316,7 +324,7 @@ let PlayerMoves = {
                     //if so, display "you won" message
                     alert('You won!!! Congrats! Reload to play again!');
                 } else {
-
+                    alert('You damaged your enemy! Congrats! Now your enemy attacks');
 
 
                     //enemy attacks
@@ -352,6 +360,7 @@ let PlayerMoves = {
                         console.log("You're lucky as hell!!");
                         let getActions = document.querySelector(".actions");
                         getActions.innerHTML = '<a href="#" class="btn-prefight" onclick="PlayerMoves.PlayerAttacksFirst()">Attack again!!</a>';
+                        alert('You doged the enemy\'s attack! Now it\'s your turn to attack!!');
                         return;
                     } else {
                         //you don't doge it:(
@@ -375,6 +384,7 @@ let PlayerMoves = {
                             } else {
                                 let getActions = document.querySelector(".actions");
                                 getActions.innerHTML = '<a href="#" class="btn-prefight" onclick="PlayerMoves.PlayerAttacksFirst()">Attack again!!</a>';
+                                alert('You did not dodge your enemy\'s attack! You have been damaged! Now it\'s your turn!');
                                 return;
                             }
                         } else {
@@ -392,6 +402,7 @@ let PlayerMoves = {
                             } else {
                                 let getActions = document.querySelector(".actions");
                                 getActions.innerHTML = '<a href="#" class="btn-prefight" onclick="PlayerMoves.PlayerAttacksFirst()">Attack again!!</a>';
+                                alert('You did not dodge your enemy\'s attack! You have been damaged! Now it\'s your turn!');
                                 return;
                             }
                         }
@@ -421,37 +432,6 @@ let PlayerMoves = {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    calcFirstAttack: function() {
-        let getPlayerSpeed = player.speed;
-        let getEnemySpeed = enemy.speed;
-
-        currentEnemyHealth = enemy.health;
-        currentPlayerHealth = player.health;
-        currentEnemyStamina = enemy.stamina;
-        currentPlayerStamina = player.stamina;
-
-        if (getPlayerSpeed > getEnemySpeed) {
-            this.PlayerAttacksFirst();
-        }else {
-            this.EnemyAttacksFirst();
-        }
-        
-    },
 
     EnemyAttacksFirst: function() {
         //player attack
@@ -487,6 +467,7 @@ let PlayerMoves = {
             console.log("You're lucky as hell'");
             let getActions = document.querySelector(".actions");
             getActions.innerHTML = '<a href="#" class="btn-prefight" onclick="PlayerMoves.PlayerAttacksFirst()">Attack again!!</a>';
+            alert("You dodged your enemy's attack! Congrats! Now it's your turn to attack!")
             return;
 
 
@@ -518,6 +499,8 @@ let PlayerMoves = {
                     //if so, display "you won" message
                     alert('You lost! Next tome, choose a better character and Reload to play again!');
                 } else {
+                    alert('You did not dodge your enemy\'s attack! You have been damaged! Now it\'s your turn!');
+                    return;
 
                  }
                 
@@ -542,6 +525,7 @@ let PlayerMoves = {
                     //if so, display "you won" message
                     alert('You won!!! Congrats! Reload to play again!');
                 } else {
+                    alert("You lost! Reload to play again! Choose a better character next time!")
                     return;
                 }
             }
