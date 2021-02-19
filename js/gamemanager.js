@@ -1,5 +1,6 @@
 let GameManager = {
     setGameStart: function(classType) {
+        console.log("PlayerMoves.MakePlayerWinImmediately();")
         this.resetPlayer(classType);
         this.setPreFight();
     },
