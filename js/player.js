@@ -126,7 +126,7 @@ let PlayerMoves = {
          let calcPlayerAgilityRandomNumber;
          calcPlayerAgilityRandomNumber = Math.random() * 8;
          console.log('your agilityrandomnumber' + calcPlayerAgilityRandomNumber);
-         let getPlayerAgility = enemy.aglilty / 100;
+         let getPlayerAgility = player.agility / 100;
          console.log('yor agility' + getPlayerAgility);
          //calc probability of doging
          if (calcPlayerAgilityRandomNumber <= getPlayerAgility) {
@@ -142,6 +142,9 @@ let PlayerMoves = {
                  getPlayerCuteness = getPlayerCuteness / 10;
                  //calculate final dmg after defenses
                  finalEnemyAttackDamage = finalEnemyAttackDamage - getPlayerCuteness;
+                 if (finalEnemyAttackDamage <= 0) {
+                     finalEnemyAttackDamage = 0;
+                 }
                  console.log('final enemy atk dmg ' + finalEnemyAttackDamage);
                  let setPlayerHealth = currentPlayerHealth - finalEnemyAttackDamage;
                  //changer player health after attacks
@@ -157,7 +160,7 @@ let PlayerMoves = {
                      alert('You did not dige your enemy\'s attack! You have been damaged! Now it\'s your turn!');
                      return;
                  }
-             } else {
+                } else {
                  console.log('final enemy atk dmg ' + finalEnemyAttackDamage);
                  let setPlayerHealth = currentPlayerHealth - finalEnemyAttackDamage;
                  //changer player health after attacks
