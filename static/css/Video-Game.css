@@ -51,6 +51,7 @@ flex-direction: column;
 flex-wrap: nowrap;
 align-items: center;
 justify-content: center;
+margin-top: 50px;
 }
 
 .how-to p {
@@ -212,3 +213,81 @@ font-size: 12px;
 color: #d5c8af;
 line-height: 20px;
 }
+
+.links {
+font-size: 30px;
+text-align: center;
+align-items: center;
+color: #ffffff;
+text-decoration: none;
+
+}
+
+/* .links a {
+    color: #ffffff;
+}*/
+
+.Play {
+color: #e64747;
+}
+
+.Instructions {
+color: #19571e;
+}
+
+.Play2 a {
+    text-align: center;
+}
+
+.Play22 {
+width: 100% !important;
+margin-top: 150px;
+}
+
+.Play2 {
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+}
+
+.Play2 a {
+width: 33.33%;
+padding: 10px 0px;
+text-align: center;
+font-size: 14px;
+font-family: arial;
+color: #1b1b1b;
+}
+
+.Play2 a:nth-of-type(1) {
+background-color: #1fa9cc;
+}
+
+.Play2 a:nth-of-type(2) {
+background-color: #e6ce47;
+}
+
+.Play2 a:nth-of-type(3) {
+background-color: #6de647;
+}
+
+.Play2 a:hover {
+opacity: 0.9;
+}
+
+.back-button {
+    margin-left: 15px;
+    padding-top: 50px;
+    font-size: 15px;
+}
+
+.bbc {
+    margin-top: 75px;
+    margin-left: 15px;
+}
+
+.bbc a {
+    font-size: 20px;
+    color: #e64747;
+}
+
