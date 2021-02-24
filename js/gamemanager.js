@@ -37,7 +37,6 @@ let GameManager = {
         let getHeader = document.querySelector(".header");
         let getActions = document.querySelector(".actions");
         let getEnemy = document.querySelector(".enemy");
-        let getHowTo = document.querySelector('.how-to');
 
         let enemy00 = new Enemy('Ben', 150, 100, 25, 175, 100, 175, 0);
         let enemy01 = new Enemy('Devil', 200, 200, 100, 200, 200, 200, 300);
@@ -63,7 +62,6 @@ let GameManager = {
         getHeader.innerHTML = '<p>Task: Choose your move!</p>';
         getActions.innerHTML = '<a href="#" class="btn-prefight" onclick="PlayerMoves.calcFirstAttack()">Attack!</a>';
         getEnemy.innerHTML = '<img src="Video-Game-elements/Enemies/' + enemy.enemyType + '.jpg" alt="' + enemy.enemyType + '" class="img-avatar"><div><h3>' + enemy.enemyType + '</h3><p class="health-enemy">Health: ' + enemy.health + '</p><p>Strength: ' + enemy.strength + '</p><p>Hacks: ' + enemy.hacks + '</p><p>Agility: ' + enemy.agility + '</p><p class="stamina-enemy">Stamina: ' + enemy.stamina + '</p><p>Speed: ' + enemy.speed + '</p><p>Cuteness: ' + enemy.cuteness + '</p></div>';
-        getHowTo.innerHTML = '<div></div>';
         
     }
 }
