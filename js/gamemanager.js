@@ -41,7 +41,7 @@ let GameManager = {
         let enemy00 = new Enemy('Ben', 150, 100, 25, 175, 100, 175, 0);
         let enemy01 = new Enemy('Devil', 200, 200, 100, 200, 200, 200, 300);
         let enemy02 = new Enemy('Pumpkin', 225, 100, 0, 0, 150, 50, 100);
-        let enemy03 = new Enemy('Wizy', 150, 150, 10, 400, 400, 400, 500);
+        let enemy03 = new Enemy('Wizy', 150, 150, 25, 400, 400, 400, 500);
 
         let chooseRandomEnemy = Math.floor(Math.random() * Math.floor(4));
         console.log(chooseRandomEnemy);
