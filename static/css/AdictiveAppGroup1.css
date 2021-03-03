@@ -11,8 +11,14 @@ hr {
 }
 
 .incommingMsg {
-    border: 4px solid rgb(112, 19, 100);
     text-align: left;
+    box-shadow: 0 0 0 0.1rem rgb(255, 255, 255);
+    background-color:rgb(255, 255, 255);
+    border-radius: 12px;
+    font: bold 1rem sans-serif;
+    margin: 2rem;
+    padding: 1rem;
+    width: fit-content;
 }
 
 .incommingMsg h6 {
