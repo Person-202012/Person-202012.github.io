@@ -18,3 +18,7 @@ hr {
 .incommingMsg h6 {
     color: rgb(71, 67, 67);
 }
+
+.incommingMsg p {
+    font-size: 15px;
+}
