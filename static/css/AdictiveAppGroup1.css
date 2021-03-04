@@ -2,8 +2,16 @@ body {
     background-color: aquamarine;
     align-items: center;
     text-align: center;
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px  static solid rgb(0, 0, 0);
     font-family: Arial, Helvetica, sans-serif;
+}
+
+#title {
+    position: fixed;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    align-items: center;
+    background-color: aquamarine;
 }
 
 hr {
@@ -12,12 +20,12 @@ hr {
 
 .incommingMsg {
     text-align: left;
-    box-shadow: 0 0 0 0.1rem rgb(255, 255, 255);
+    box-shadow: 0 0 0 0rem rgb(255, 255, 255);
     background-color:rgb(255, 255, 255);
     border-radius: 12px;
     font: bold 1rem sans-serif;
     margin: 2rem;
-    padding: 1rem;
+    padding: 0.5rem;
     width: fit-content;
 }
 
@@ -26,5 +34,26 @@ hr {
 }
 
 .incommingMsg p {
+    font-size: 15px;
+}
+
+.outgoingMsg {
+    text-align: left;
+    box-shadow: 0 0 0 0rem rgb(255, 255, 255);
+    background-color:rgb(255, 255, 255);
+    border-radius: 12px;
+    font: bold 1rem sans-serif;
+    margin: 2rem;
+    padding: 0.5rem;
+    width: fit-content;
+    align-items: center;
+    float: right;
+}
+
+.outgoingMsg h6 {
+    color: rgb(71, 67, 67);
+}
+
+.outgoingMsg p {
     font-size: 15px;
 }
