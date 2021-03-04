@@ -57,3 +57,20 @@ hr {
 .outgoingMsg p {
     font-size: 15px;
 }
+
+#sendMsgDiv {
+    background-color: aquamarine;
+    position: fixed;
+    margin: auto;
+    bottom: 10px;
+    width: 50%;
+    border: 3px solid #8AC007;
+}
+
+#sendMsg {
+    height: 50px;
+    width: 1820px;
+    font-size: 45px;
+    box-shadow: 0 0 0 1rem rgb(255, 0, 0);
+    border-radius: 12px;
+}
