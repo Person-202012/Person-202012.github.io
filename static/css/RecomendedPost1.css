@@ -25,3 +25,8 @@ hr {
 .trumpDominionTweet {
     width: 400px;
 }
+
+#comments {
+    text-align: left;
+    margin-top: 100px;
+}
