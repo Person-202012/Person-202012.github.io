@@ -3,7 +3,7 @@ body {
     align-items: center;
     text-align: center;
     border: 1px  static solid rgb(0, 0, 0);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 #title {
@@ -23,7 +23,7 @@ hr {
     box-shadow: 0 0 0 0rem rgb(255, 255, 255);
     background-color:rgb(255, 255, 255);
     border-radius: 12px;
-    font: bold 1rem sans-serif;
+    font: bold 1rem;
     margin: 2rem;
     padding: 0.5rem;
     width: fit-content;
@@ -42,7 +42,7 @@ hr {
     box-shadow: 0 0 0 0rem rgb(255, 255, 255);
     background-color:rgb(255, 255, 255);
     border-radius: 12px;
-    font: bold 1rem sans-serif;
+    font: bold 1rem;
     margin: 2rem;
     padding: 0.5rem;
     width: fit-content;
