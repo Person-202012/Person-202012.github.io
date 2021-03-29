@@ -76,5 +76,6 @@ p {
 }
 
 .kickme {
-    align-items: center;
+    margin-left: 50rem;
+    margin-top: 5rem;
 }
