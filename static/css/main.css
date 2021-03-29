@@ -72,4 +72,9 @@ h6{
 
 p {
     margin-top: 100px;
+    text-align: center;
+}
+
+.kickme {
+    align-items: center;
 }
