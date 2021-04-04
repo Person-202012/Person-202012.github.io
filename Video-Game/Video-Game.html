@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="google-site-verification" content="fMvkrRxf3lZYvUpvbTyINiL2AJUwbODUbX2mTWFRIMk" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Terrible Video Game</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme">
+        <link rel="stylesheet" href="static/css/style.css">
+        <link rel="stylesheet" href="static/css/Video-Game.css">
+        <script src="js/gamemanager.js"></script>
+        <script src="js/enemy.js"></script>
+        <script src="js/player.js"></script>
+        <link rel="shortcut icon" type="image/jpg" href="img/ham.jpg"/>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-0E61GCB9LT"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-0E61GCB9LT');
+        </script>
+
+    </head>
+    <body>
+
+        <nav class="nav-main">
+            <div class="btn-toggle-nav"></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="madlib.html">Mad Libs</a></li>
+                <li><a href="Riddle1.html">Riddle</a></li>
+                <li><a href="gameLandingPage.html">Video-Game</a></li>
+                <li><a href="AboutMe.html">About Me</a></li>
+            </ul>  
+        </nav>
+
+
+        <div class="bbc">
+            <a class="back-button" href="gameLandingPage.html">Back</a>
+        </div>
+
+        <div class='header'>
+            <p>Play the greatest RPG ever made!</p>
+            <h2>Choose your hero!</h2>
+        </div>
+
+        <div class='interface'>
+            <a href='#' onclick="GameManager.setGameStart('Dean')">
+                <img src="Video-Game-elements\Heros\Dean.jpg" alt="dean">
+                <div>
+                    <h3>Mark Dean<h3>
+                        <p>Mark Dean was an inventor of the computer so he knows hacks, even if he isn't the best athlete in the group.</p>
+                </div>
+            </a>
+
+            <a href='#' onclick='GameManager.setGameStart("Adri")'>
+                <img src="Video-Game-elements\Heros\Adri.jpg" alt="adri">
+                <div>
+                    <h3>Adri<h3>
+                        <p>Adri is the smallest of the group, so she is more agile and can dodge attacks but also isn't the strongest.</p>
+                </div>
+            </a>
+
+            <a href='#' onclick='GameManager.setGameStart("Dude")'>
+                <img src="Video-Game-elements\Heros\Dude.jpg" alt="dude">
+                <div>
+                    <h3>Dude<h3>
+                        <p>The dude is definitly the biggest and strongest but also overweight and sluggish.</p>
+                </div>
+            </a>
+
+            <a href='#' onclick='GameManager.setGameStart("Neil")'>
+                <img src="Video-Game-elements\Heros\Neil.jpg" alt="neil">
+                <div>
+                    <h3>Neil<h3>
+                        <p>Neil made this game so he obvoiusly has some advantages, even if not eating sugar gives him less energy.</p>
+                </div>
+            </a>
+        </div>
+
+        <div class='actions'></div>
+
+        <div class='arena'></div>
+
+        <div class='enemy'></div>
+
+        <div class="Play2">
+            <a href="Instructions.html" class="Play22">Instructions</a>
+        </div>
+
+        
+        
+
+      
+        
+
+
+    </body>
+    <script src="js/main.js"></script>
+</html>
