@@ -1,0 +1,76 @@
+body {
+    background-color: aquamarine;
+    align-items: center;
+    text-align: center;
+    border: 1px  static solid rgb(0, 0, 0);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#title {
+    position: fixed;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    align-items: center;
+    background-color: aquamarine;
+}
+
+hr {
+    border-top  : 3px solid red;
+}
+
+.incommingMsg {
+    text-align: left;
+    box-shadow: 0 0 0 0rem rgb(255, 255, 255);
+    background-color:rgb(255, 255, 255);
+    border-radius: 12px;
+    font: bold 1rem;
+    margin: 2rem;
+    padding: 0.5rem;
+    width: fit-content;
+}
+
+.incommingMsg h6 {
+    color: rgb(71, 67, 67);
+}
+
+.incommingMsg p {
+    font-size: 15px;
+}
+
+.outgoingMsg {
+    text-align: left;
+    box-shadow: 0 0 0 0rem rgb(255, 255, 255);
+    background-color:rgb(255, 255, 255);
+    border-radius: 12px;
+    font: bold 1rem;
+    margin: 2rem;
+    padding: 0.5rem;
+    width: fit-content;
+    align-items: center;
+    float: right;
+}
+
+.outgoingMsg h6 {
+    color: rgb(71, 67, 67);
+}
+
+.outgoingMsg p {
+    font-size: 15px;
+}
+
+#sendMsgDiv {
+    background-color: aquamarine;
+    position: fixed;
+    margin: auto;
+    bottom: 10px;
+    width: 50%;
+}
+
+#sendMsg {
+    height: 50px;
+    width: 1870px;
+    font-size: 45px;
+    box-shadow: 0 0 0 1rem rgb(255, 0, 0);
+    border-radius: 12px;
+}
+
