@@ -9,6 +9,14 @@
 }
 
 .img1 {
-    visibility: hidden;
+    visibility: visible;
 
+}
+
+.img2{
+    visibility: hidden;
+}
+
+img3{
+    visibility: hidden;
 }
