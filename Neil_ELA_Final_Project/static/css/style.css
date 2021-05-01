@@ -18,12 +18,10 @@
     animation-name: IMG1;
     animation-duration: 4s;
     transition: transform 2s;
-
+    transform: scale(1);
 }
 
-.img1:hover {
-transform: scale(30); 
-}
+
 
 .img2{
     visibility: hidden;
