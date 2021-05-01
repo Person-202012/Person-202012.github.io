@@ -9,19 +9,6 @@
     text-decoration: none;
 }
 
-.img1 {
-    visibility: visible;
-    width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    animation-name: IMG1;
-    animation-duration: 4s;
-    transition: transform 2s;
-    transform: scale(1);
-}
-
-
 
 .img2{
     visibility: hidden;
@@ -37,6 +24,13 @@
     margin-right: auto;
     display: block;
     width: 100%;
+    visibility: visible;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transition: transform 2s;
+    transform: scale(1);
 }
 
 body{
@@ -48,12 +42,4 @@ body{
 a{
     text-decoration: none;
     color: black;
-}
-
-
-@keyframes IMG1 {
-    0%   {scale: (1);}
-    25%  {scale: (2);}
-    50%  {scale: (3);}
-    100% {scale: (4);}
 }
