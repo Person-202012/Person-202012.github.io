@@ -17,7 +17,12 @@
     display: block;
     animation-name: IMG1;
     animation-duration: 4s;
+    transition: transform 2s;
 
+}
+
+.img1:hover {
+transform: scale(3); 
 }
 
 .img2{
@@ -49,8 +54,8 @@ a{
 
 
 @keyframes IMG1 {
-    0%   {background-color: red;}
-    25%  {background-color: yellow;}
-    50%  {background-color: blue;}
-    100% {background-color: green;}
+    0%   {scale: (1);}
+    25%  {scale: (2);}
+    50%  {scale: (3);}
+    100% {scale: (4);}
 }
