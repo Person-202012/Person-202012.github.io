@@ -21,7 +21,7 @@
 
 .displayWindow{
     display: block;
-    /*visibility: visible;*/
+    /*visibility: visible; */
     width: 1000px;
     height: auto;
     margin-left: auto;
