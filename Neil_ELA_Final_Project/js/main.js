@@ -2,7 +2,7 @@ let main = {
 
     start: function() {
         let imageRn1 = document.querySelector('.img1');
-        imageRn1.style
+        imageRn1.style.transform = 'scale(33)'
     }
     
 }
