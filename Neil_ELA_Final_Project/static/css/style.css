@@ -20,14 +20,13 @@
 */
 
 .displayWindow{
-    /*visibility: visible; */
-    width: 1000px;
-    height: auto;
+    width: 800px;
+    height: 800px;
     margin-left: auto;
     margin-right: auto;
     display: block;
-    /*transition: transform 2s;
-    transform: scale(1); */
+    transition: transform 2s;
+    transform: scale(0.7);
     background-image: url("../../img/marsplanet1.jpg");
 }
 
@@ -41,3 +40,47 @@ a{
     text-decoration: none;
     color: black;
 }
+
+#testimg1 {
+    margin-top: auto;
+    object-fit: cover;
+    width: 800px;
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transition: transform 2s;
+    transform: scale(0.7);
+    transform: object-position(50%, 0);
+    left: 0;
+    top: 0;
+}
+
+#startButton {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: rgb(84, 84, 196);
+    width: 110px;
+    height: 20px;
+    color: rgb(255, 255, 255);
+}
+
+#container{
+    width: 800px;
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    overflow: hidden;
+   
+
+}
+/*
+ animation: mymove 5s infinite;
+
+
+@keyframes mymove {
+  50% {left: 500px;}
+}
+*/
