@@ -70,11 +70,8 @@ a{
     margin-left: auto;
     margin-right: auto;
     display: block;
-    transition: transform 2s;
+    transition: transform 3s;
     transform: scale(0.7);
-    transform: top(0);
-    left: 0;
-    top: 0;
     animation: move1 3s;
 }
 
